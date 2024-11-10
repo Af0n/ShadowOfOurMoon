@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    PauseMenu pauseMenu;
-    SettingsMenu settingsMenu;
+    public PauseMenu pauseMenu;
+    public SettingsMenu settingsMenu;
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            Debug.Log("Eos");
             togglePause();  
         }
     }
 
-    private void togglePause()
+    public void togglePause()
     {
         if (!pauseMenu.gameObject.activeSelf)
         {
@@ -26,5 +25,17 @@ public class MenuManager : MonoBehaviour
         {
             pauseMenu.gameObject.SetActive(false);
         }
+    }
+
+    public void onSettingsClicked()
+    {
+        settingsMenu.gameObject.SetActive(true);
+        pauseMenu.gameObject.SetActive(false);
+    }
+
+    public void onExitClicked()
+    {
+        Debug.Log("Exited");
+        Application.Quit();
     }
 }

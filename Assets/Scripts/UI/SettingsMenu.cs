@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ToggleStaticFX()
     {
-        
+        Debug.Log("FX Toggled");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ExitClicked()
     {
-        
+        this.gameObject.SetActive(false);
     }
 }
