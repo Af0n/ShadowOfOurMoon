@@ -7,6 +7,21 @@ public class MenuManager : MonoBehaviour
     public PauseMenu pauseMenu;
     public SettingsMenu settingsMenu;
 
+    public static MenuManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
