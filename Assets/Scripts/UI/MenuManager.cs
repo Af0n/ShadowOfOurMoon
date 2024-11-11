@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager instance;
 
+    public bool isPaused;
+
     private void Awake()
     {
         if (instance == null)
@@ -32,14 +34,35 @@ public class MenuManager : MonoBehaviour
 
     public void togglePause()
     {
-        if (!pauseMenu.gameObject.activeSelf)
+        // Checking for any pause menu being active
+        if (!isPaused)
         {
-            pauseMenu.gameObject.SetActive(true);
+            OpenPauseMenu();
+            Time.timeScale = 0f;
         }
-        else
+        else if (pauseMenu.gameObject.activeSelf)
         {
-            pauseMenu.gameObject.SetActive(false);
+            // Only enters if in the pause menu
+            HidePauseMenu();
         }
+    }
+
+    public void GameResumed()
+    {
+        HidePauseMenu();
+        Time.timeScale = 1.0f;
+    }
+
+    public void HidePauseMenu()
+    {
+        pauseMenu.gameObject.SetActive(false);
+        isPaused = false;
+    }
+
+    public void OpenPauseMenu()
+    {
+        pauseMenu.gameObject.SetActive(true);
+        isPaused = true;
     }
 
     public void onSettingsClicked()
