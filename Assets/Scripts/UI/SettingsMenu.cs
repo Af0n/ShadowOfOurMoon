@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     public Slider brightnessSlider;
-    public void ToggleStaticFX()
+
+    public void EnableGrain()
     {
-        Debug.Log("FX Toggled");
-        PostProcessManager.instance.ToggleGrain();
-        //if (Input.GetKeyDown(KeyCode.F))
-        //{
-        //    PostProcessManager.instance.ToggleGrain();
-        //}
+        PostProcessManager.instance.EnableGrain();
+    }
+
+    public void DisableGrain()
+    {
+        PostProcessManager.instance.DisableGrain();
     }
 
     public void ExitClicked()
