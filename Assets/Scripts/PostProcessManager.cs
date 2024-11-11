@@ -9,6 +9,7 @@ public class PostProcessManager : MonoBehaviour
     
     private PostProcessVolume postProcessVolume;
     private Grain grain;
+    private ColorGrading colorGrading;
 
     private void Awake()
     {
@@ -25,6 +26,10 @@ public class PostProcessManager : MonoBehaviour
         postProcessVolume = GetComponent<PostProcessVolume>();
 
         postProcessVolume.profile.TryGetSettings(out grain);
+        if( postProcessVolume.profile.TryGetSettings(out colorGrading))
+        {
+            Debug.Log("Color Grading found");
+        }
     }
 
     public void EnableGrain()
@@ -47,5 +52,11 @@ public class PostProcessManager : MonoBehaviour
         {
             EnableGrain();
         }
+    }
+
+    public void SetBrightness(float brightness)
+    {
+        colorGrading.postExposure.value = brightness;
+        Debug.Log("Brightness Set");
     }
 }

@@ -398,6 +398,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5309431247472845253, guid: d53e8e6f333917043b36cdad7811e11d, type: 3}
   m_PrefabInstance: {fileID: 859381349057076792}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &91959383 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+  m_PrefabInstance: {fileID: 213920716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &213920716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,7 +531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4607068273244621653, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
       propertyPath: m_Name
-      value: VolumePanel (1)
+      value: BrightnessPanel
       objectReference: {fileID: 0}
     - target: {fileID: 5745234122395191809, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
       propertyPath: m_AnchorMax.y
@@ -545,6 +556,38 @@ PrefabInstance:
     - target: {fileID: 7102251877299448885, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_Value
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1673913464}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBrightnessChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495229115872591923, guid: 5a3d4529f670e744c914b536959f25d4, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1924,6 +1967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f194842d1de9f6a4fa17d7c488b9a0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brightnessSlider: {fileID: 91959383}
 --- !u!1 &2008209685
 GameObject:
   m_ObjectHideFlags: 0
