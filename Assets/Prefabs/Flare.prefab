@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6931107188430477757}
   - component: {fileID: 2146786358261917412}
   - component: {fileID: 2241104981592715364}
-  - component: {fileID: 786351114917633569}
-  m_Layer: 0
+  - component: {fileID: 8432772719188758887}
+  m_Layer: 8
   m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c218eba3a5b9d034b8c3ede061eb75d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,8 +115,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &786351114917633569
-SphereCollider:
+--- !u!136 &8432772719188758887
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,17 +125,19 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6325433003655764488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,11 +152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1643496164839445076, guid: f122c1cede445c348a88d5051faca922, type: 3}
       propertyPath: color.b
-      value: 0.44705883
+      value: 0.16470589
       objectReference: {fileID: 0}
     - target: {fileID: 1643496164839445076, guid: f122c1cede445c348a88d5051faca922, type: 3}
       propertyPath: color.g
-      value: 0.62352943
+      value: 0.34509805
       objectReference: {fileID: 0}
     - target: {fileID: 3426279977919229493, guid: f122c1cede445c348a88d5051faca922, type: 3}
       propertyPath: m_Color.b
@@ -211,6 +213,14 @@ PrefabInstance:
     - target: {fileID: 6117218045865318231, guid: f122c1cede445c348a88d5051faca922, type: 3}
       propertyPath: m_Name
       value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117218045865318231, guid: f122c1cede445c348a88d5051faca922, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046056449629057507, guid: f122c1cede445c348a88d5051faca922, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
