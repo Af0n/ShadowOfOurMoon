@@ -31,7 +31,7 @@ public class Flashlight : MonoBehaviour
 
     public float PercentCharged
     {
-        get { return maxTime / batteryTimer; }
+        get { return batteryTimer / maxTime; }
     }
 
     public float PercentBurned
