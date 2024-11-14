@@ -49,7 +49,7 @@ public class Flashlight : MonoBehaviour
     {
         EvaluateState();
 
-        Debug.Log(batteryTimer);
+        // Debug.Log(batteryTimer);
 
         toggleTimer -= Time.deltaTime;
 

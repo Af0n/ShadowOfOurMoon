@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6085331641274774679}
   - component: {fileID: 1014573667339701925}
   - component: {fileID: 1353668843209311529}
+  - component: {fileID: 3881938055202901550}
   - component: {fileID: 8418239050945884231}
   m_Layer: 7
   m_Name: Player
@@ -56,9 +57,9 @@ MonoBehaviour:
   gravity: 1.6
   cam: {fileID: 3142594639255540048}
   groundCheck: {fileID: 7118453540015988467}
-  layerMask:
+  groundMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   checkRadius: 0.45
 --- !u!114 &1014573667339701925
 MonoBehaviour:
@@ -94,6 +95,24 @@ MonoBehaviour:
   burnoutTime: 2.5
   toggleTime: 0.25
   flashy: {fileID: 6567546828051462731}
+--- !u!114 &3881938055202901550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756960261913914192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05efcc2164c79884bbaebf96a51d90b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 2
+  doingInteract: 1
+  interactMask:
+    serializedVersion: 2
+    m_Bits: 512
+  cam: {fileID: 3142594639255540048}
 --- !u!143 &8418239050945884231
 CharacterController:
   m_ObjectHideFlags: 0

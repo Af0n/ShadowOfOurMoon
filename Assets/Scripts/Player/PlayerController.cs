@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [Header("Unity Set Up")]
     public Transform cam;
     public Transform groundCheck;
-    public LayerMask layerMask;
+    public LayerMask groundMask;
     public float checkRadius;
 
     private CharacterController controller;
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
     private void DoGravity()
     {
-        if (Physics.CheckSphere(groundCheck.position, checkRadius, layerMask))
+        if (Physics.CheckSphere(groundCheck.position, checkRadius, groundMask))
         {
             yVelocity = 2;
         }
