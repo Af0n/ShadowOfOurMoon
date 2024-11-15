@@ -1,27 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class ShadeStasis : MonoBehaviour
 {
-    private bool canStasis;
+    public LayerMask groundMask;
+
+    private StasisObject obj;
+
     // the collider only accepts stasisables
     // can safely call RB's
-    private void OnTriggerEnter(Collider other) {
-        other.GetComponent<Rigidbody>().isKinematic = false;
-        StartCoroutine("StasisDelay");
+    private void Awake() {   
     }
 
-    private IEnumerator StasisDelay(){
-        canStasis = false;
-        yield return new WaitForSeconds(0.1f);
-        canStasis = true;
-    }
+    private void OnTriggerStay(Collider other) {
+        obj = other.GetComponent<StasisObject>();
 
-    private void OnTriggerExit(Collider other) {
-        if(!canStasis){
+        if(obj == null){
+            Debug.Log("Nuller" + name + " " +other.name);
             return;
         }
-        other.GetComponent<Rigidbody>().isKinematic = true;
+
+        Vector3 dir = transform.position - other.transform.position;
+        // check if obj is in this light's shadow
+        if(Physics.Raycast(other.transform.position, dir, dir.magnitude, groundMask)){
+            if(obj.litBy == this){
+                obj.litBy = null;
+            }
+            return;
+        }
+
+        obj.litBy = this;
     }
 }
