@@ -6,26 +6,40 @@ using UnityEngine;
 public class ShadeStasis : MonoBehaviour
 {
     public LayerMask groundMask;
+    public Transform lightPos;
+    public Flashlight flashy;
 
     private StasisObject obj;
 
     // the collider only accepts stasisables
     // can safely call RB's
-    private void Awake() {   
+    private void Awake()
+    {
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerStay(Collider other)
+    {
         obj = other.GetComponent<StasisObject>();
 
-        if(obj == null){
-            Debug.Log("Nuller" + name + " " +other.name);
-            return;
+        if (flashy != null)
+        {
+            if (!flashy.IsOn)
+            {
+                if (obj.litBy == this)
+                {
+                    obj.litBy = null;
+                }
+                return;
+            }
         }
 
-        Vector3 dir = transform.position - other.transform.position;
+        Vector3 dir = lightPos.position - other.transform.position;
+
         // check if obj is in this light's shadow
-        if(Physics.Raycast(other.transform.position, dir, dir.magnitude, groundMask)){
-            if(obj.litBy == this){
+        if (Physics.Raycast(other.transform.position, dir, dir.magnitude, groundMask))
+        {
+            if (obj.litBy == this)
+            {
                 obj.litBy = null;
             }
             return;

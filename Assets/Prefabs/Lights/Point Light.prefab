@@ -65,6 +65,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  lightPos: {fileID: 4752580150125804105}
 --- !u!108 &3426279977919229493
 Light:
   m_ObjectHideFlags: 0
