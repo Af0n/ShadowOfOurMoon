@@ -33,6 +33,8 @@ public class StasisObject : MonoBehaviour
             }else{
                 health += drain * Time.deltaTime;
             }
+
+            health = Mathf.Clamp(health, 0, 1f);
             
             controller.multiplier = Mathf.Max(health, 0.25f);
 
