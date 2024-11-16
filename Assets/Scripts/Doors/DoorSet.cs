@@ -71,11 +71,27 @@ public class DoorSet : MonoBehaviour
 
         // If player has the given keycard, let the door be unlocked
 
-        if (player != null && doorGroup.isUnlocked && !isOpening)
+
+
+        if (player != null)
         {
             Debug.Log("Player entered trigger");
-            isOpening = true;
+            if (!doorGroup.isUnlocked)
+            {
+                bool unlocked = doorGroup.TryUnlock();
+                // TODO: Set door display based on this result;
+                Debug.Log("Door unlocked?: " +  unlocked);
+            }
+
+            if (doorGroup.isUnlocked && !isOpening)
+            {
+                isOpening = true;
+            }
+
+            
         }
+
+        
     }
 
 }

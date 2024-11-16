@@ -17,4 +17,11 @@ public class DoorGroup : MonoBehaviour
         }
     }
 
+    public bool TryUnlock()
+    {
+        bool playerHasCard = KeyCardManager.instance.hasCard(buildingNum);
+        isUnlocked = playerHasCard;
+        return playerHasCard;
+    }
+
 }
