@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
@@ -10,6 +11,7 @@ public class StasisObject : MonoBehaviour
     public float health;
     public float drain;
     public ShadeStasis litBy;
+    public PlayerController controller;
 
     private bool IsNotLit{
         get{ return litBy == null; }
@@ -31,6 +33,8 @@ public class StasisObject : MonoBehaviour
             }else{
                 health += drain * Time.deltaTime;
             }
+
+            controller.multipler = Mathf.Max(health, 0.25f);
             
             return;
         }

@@ -45,7 +45,10 @@ public class ShadeStasis : MonoBehaviour
             return;
         }
 
-        obj.litBy = this;
+        
+        if(!obj.CompareTag(tag)){
+            obj.litBy = this;
+        }
     }
 
     private void OnTriggerExit(Collider other) {

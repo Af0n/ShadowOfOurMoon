@@ -28,8 +28,6 @@ public class PlayerInteract : MonoBehaviour
     }
 
     private void TryInteract(){
-        toggleTimer = toggleTime;
-
         RaycastHit hit;
         Physics.Raycast(cam.position, cam.forward, out hit, range, interactMask);
 

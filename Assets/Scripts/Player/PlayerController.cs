@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private float xRotation;
     public float yVelocity;
+    public float multipler;
 
     private void Awake()
     {
@@ -56,8 +57,8 @@ public class PlayerController : MonoBehaviour
         float forward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         float right = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-        controller.Move(forward * transform.forward);
-        controller.Move(right * transform.right);
+        controller.Move(multipler * forward * transform.forward);
+        controller.Move(multipler * right * transform.right);
     }
 
     private void DoGravity()

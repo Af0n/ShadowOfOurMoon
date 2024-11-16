@@ -733,8 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb28e6c582dead40ba68cb4c7095ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnAngle: -90
-  turnSpeed: -10
+  turnSpeed: -30
   lightTurn: {fileID: 279313759}
 --- !u!1 &658406896
 GameObject:
@@ -963,8 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb28e6c582dead40ba68cb4c7095ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnAngle: 90
-  turnSpeed: 10
+  turnSpeed: 30
   lightTurn: {fileID: 279313759}
 --- !u!1001 &793945978
 PrefabInstance:
@@ -1299,7 +1297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612d578a634391f47ad0a43dcfc56b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  drain: 0
   litBy: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!1 &1175994707
 GameObject:
   m_ObjectHideFlags: 0

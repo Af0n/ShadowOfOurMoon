@@ -45,6 +45,7 @@ public class FlareThrow : MonoBehaviour
         Destroy(previousFlare);
         rechargeTimer = 0;
         previousFlare = Instantiate(flarePrefab, spawnPos.position, Quaternion.identity);
+        previousFlare.transform.position = spawnPos.position;
         previousFlare.GetComponent<Rigidbody>().AddForce(cam.forward * throwForce, ForceMode.Impulse);
     }
 }
