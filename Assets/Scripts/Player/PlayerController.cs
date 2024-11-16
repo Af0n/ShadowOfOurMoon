@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
     private InputAction _interact;
     private CharacterController controller;
     private float xRotation;
-    private float yVelocity;
+    public float yVelocity;
     public float multiplier;
-    
+
     private void Awake()
     {
         inputActions = new PlayerControls();
@@ -97,8 +97,8 @@ public class PlayerController : MonoBehaviour
         float forward = moveInput.y * speed * Time.deltaTime;
         float right = moveInput.x * speed * Time.deltaTime;
 
-        controller.Move(forward * transform.forward);
-        controller.Move(right * transform.right);
+        controller.Move(multiplier * forward * transform.forward);
+        controller.Move(multiplier * right * transform.right);
     }
 
     private void DoGravity()

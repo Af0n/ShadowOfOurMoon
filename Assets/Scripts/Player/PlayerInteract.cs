@@ -14,9 +14,7 @@ public class PlayerInteract : MonoBehaviour
     
 
     private void Update() {
-        if(!doingInteract){
-            return;
-        }
+        TryInteract();
     }
 
     public void TryInteract(){
