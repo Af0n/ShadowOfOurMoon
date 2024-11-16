@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorGroup : MonoBehaviour
 {
-    [Range(1, 4)]
+    [Range(1, 5)]
     public int buildingNum;
     public bool isUnlocked;
 
