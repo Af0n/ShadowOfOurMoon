@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207d509b8b5c549a91d5ca2e0114f1, type: 3}
+  m_Name: LoreLog5
+  m_EditorClassIdentifier: 
+  id: 4
+  log: "Private Log \u2013 Dr. Emily Zhao\nDate: 2024-11-12\nTime: 02:30 AM\n\nI\u2019ve
+    never felt anything like this\u2014anxious, confused, almost\u2026 haunted. I
+    can\u2019t even believe I\u2019m writing that, but things feel wrong here, so
+    I need to get this down, even if it\u2019s just to convince myself I\u2019m not
+    losing it.\nThe Moon has been trapped in Earth\u2019s shadow for over 24 hours
+    now. The landscape is completely different, utterly alien. Our floodlights can
+    only do so much, and even with the new Lighthouse structures we set up, everything
+    is still cast in a strange, dim twilight. I used to know every rock and ridge
+    around here by heart, but now\u2026 now they all look distorted, looming larger
+    than they should. There\u2019s something about the way the shadows stretch and
+    move that makes everything feel wrong. The Moon\u2019s surface, usually so clear
+    and sharp, looks like it\u2019s wavering just at the edges, like something is
+    shifting out there just beyond the lights.\nMaybe it\u2019s just my nerves. Maybe
+    the darkness is playing tricks on me. But earlier, I felt like I was being watched.
+    It sounds ridiculous, but when I was alone outside running some quick checks
+    on the equipment, I swear I felt eyes on me\u2014just a weight of something watching
+    from the darkness. I kept turning around, and there was nothing there, only those
+    strange, flickering shadows. But they felt\u2026 alive, almost like they were
+    pulling closer, just past the reach of the lights.\nI\u2019m not the only one
+    feeling it, either. I heard Davis whispering to himself earlier, muttering about
+    the shadows \u201Ccrawling.\u201D He laughed it off when I asked, but his eyes
+    looked wide and unsettled. We\u2019ve all been in low-light conditions plenty,
+    but nothing has ever felt like this. The shadows around the Lighthouse beams
+    seem to move, almost flowing like liquid, stretching and shifting with an unsettling
+    rhythm that doesn\u2019t match any movement I\u2019d expect from lights alone.\nIt\u2019s
+    irrational, I know. There\u2019s no atmosphere here, no wind, no reason for anything
+    to move at all. But here I am, staring out at the darkness, feeling like it\u2019s
+    staring back at m"

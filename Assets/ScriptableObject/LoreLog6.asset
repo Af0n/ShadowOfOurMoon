@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207d509b8b5c549a91d5ca2e0114f1, type: 3}
+  m_Name: LoreLog6
+  m_EditorClassIdentifier: 
+  id: 5
+  log: "Initial Observation Notes \u2013 Lunar \u201CSapling\u201D Specimen\nCollected
+    by: Dr. Elias Porter\nDate: 2024-11-11\nLocation: South Pole Region, near seismic
+    event epicenter\n\nSpecimen Description:\nThe \u201Csapling\u201D discovered
+    is unlike any organic structure known on Earth. Standing approximately 20 cm
+    tall, it has a distinct branching structure similar to a young tree, but with
+    an unusual, almost crystalline texture to its surface. The entire specimen is
+    a deep, matte black, absorbing nearly all ambient light.\nKey Observations:\nOrganic
+    Composition: Despite its strange, otherworldly appearance, preliminary scans
+    confirm the sapling is organic. However, its cellular structure is completely
+    alien, unlike any terrestrial plant or fungal cell observed to date.\nLight Absorption
+    and Emission: The specimen absorbs nearly all light that touches it, resulting
+    in an unusually dark profile even under direct illumination. Fascinatingly, when
+    physically disturbed, the sapling releases stored light in a faint, steady glow\u2014a
+    phenomenon I\u2019ve never seen in any Earth organism. This glow slowly fades
+    until disturbed again, almost like it \u201Cbreathes\u201D light when touched.\nRetrieval
+    Site Conditions:\nThe area surrounding the sapling was distinctly disturbed,
+    with large cracks radiating outward across the lunar soil. The ground was unsettled,
+    showing signs of upheaval as if something had pushed through from beneath. The
+    cracks were roughly aligned with the center of last night\u2019s seismic activity,
+    suggesting a potential connection between the sapling's emergence and the quake.\nHypotheses
+    and Initial Questions:\nSeismic Link: Could the recent quake have unearthed this
+    sapling, or is it possible the sapling itself played a role in the quake\u2019s
+    intensity?\nAdaptations and Origin: The sapling\u2019s light-absorbing and light-releasing
+    properties raise questions about its survival mechanisms. Is it adapted to lunar
+    darkness in some way, or could it be extraterrestrial in origin?\nFurther analysis
+    will be critical in understanding the biological function and origin of this
+    organism. For now, I am securing it in the isolation chamber for containment
+    and study."

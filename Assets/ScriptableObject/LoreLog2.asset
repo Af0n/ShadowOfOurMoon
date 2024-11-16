@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207d509b8b5c549a91d5ca2e0114f1, type: 3}
+  m_Name: LoreLog2
+  m_EditorClassIdentifier: 
+  id: 1
+  log: "Lunar Seismic Reading Log\r\nDate: 2024-11-11\r\nLocation: Remote Lunar Research
+    Facility (RLRF), South Pole Region\r\nOperator: Dr. Sarah Lee\r\n\r\n[00:00]
+    Seismic Status: Nominal. No significant lunar activity detected. Sensor sensitivity
+    at 100%.\r\n[03:25] Initial Tremor Detected: Low-frequency tremor registered
+    at RLRF seismic array. Duration: 4 seconds. Magnitude: 0.4. Unusual given lack
+    of recent activity. Monitoring for additional events.\r\n[03:27] Second Tremor
+    Detected: Moderate quake detected. Duration: 8 seconds. Magnitude: 1.3. Source
+    appears to be a deep-seated fault line within 30 km of RLRF. Possible tectonic
+    shift.\r\n[03:30] Major Quake Detected: Intense seismic activity begins. Duration:
+    ongoing. Magnitude: 5.8. Sensors report significant ground motion. Structural
+    alarms triggered. Seismic waves moving rapidly outward from epicenter near facility.\r\n[03:31]
+    Critical Alert Issued: Large-scale seismic event affecting entire South Pole
+    region. Automated systems activating emergency shutdown procedures for sensitive
+    equipment. Facility staff advised to shelter.\r\n[03:33] Seismic Activity Peaks:
+    Quake reaches peak intensity at facility. Duration of peak: 12 seconds. Magnitude:
+    6.2. Secondary aftershocks likely. Structural sensors reporting significant vibration
+    and stress load.\r\n[03:35] Connection Loss: All communications and telemetry
+    lost from RLRF. Facility goes dark. Last transmission indicates structural integrity
+    failure in core systems. Final report shows cascading systems shutdown in progress.\r\n[03:40]
+    Seismic Activity Begins to Decrease: Main tremor subsides, but aftershocks continue.
+    Magnitude: 4.0. Monitoring ongoing, but no further signals received from RLRF.\r\n[04:00]
+    Aftershocks Continue: Smaller aftershocks persisting near facility\u2019s last
+    known coordinates. Magnitude ranging between 1.2 and 2.5. Remote communication
+    attempts unsuccessful.\r\n\r\nSummary: Remote Lunar Research Facility experienced
+    a severe seismic event originating near the South Pole. Primary quake registered
+    at a magnitude of 6.2, causing extensive ground motion and triggering a facility-wide
+    shutdown. Communication and telemetry were lost, indicating possible critical
+    structural failure. Reconnection attempts ongoing, but facility remains offline.
+    Further assessment needed once safe conditions resume"

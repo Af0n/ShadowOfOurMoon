@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207d509b8b5c549a91d5ca2e0114f1, type: 3}
+  m_Name: LoreLog1
+  m_EditorClassIdentifier: 
+  id: 0
+  log: "Telescope Facility Status Log\r\nDate: xxxxxx\r\nOperator: J. Doe\r\nFacility:
+    Lunar Far Side Observatory (LFSO)\r\n\r\n[00:00] Status: All systems operational.
+    Telescope array initialized in standby mode on lunar far side. Remote uplink
+    confirmed.\r\n[00:05] Observation Start: Observation sequence initiated. Target:
+    Messier 87 Galaxy. Remote guidance and tracking active.\r\n[00:15] Lunar Conditions
+    Report: Lunar surface stable. No seismic activity detected. Solar wind levels
+    minimal.\r\n[00:30] Observation Progress: Telescope successfully locked on target.
+    Data collection ongoing. All systems stable.\r\n[01:00] Observation Checkpoint:
+    50% of data collection completed. Signal-to-noise ratio nominal. No interference
+    detected.\r\n[01:45] Warning 9800: Vibration sensors detect abnormal tremors
+    at telescope base. Severity Level: Low. Monitoring.\r\n[01:55] Alert: Sudden
+    impact detected near telescope structure. Severity Level: Critical. Automated
+    systems securing data.\r\n[02:00] Error 9001: Telescope hardware integrity compromised.
+    Structural sensors offline. Emergency shutdown initiated.\r\n[02:02] Catastrophic
+    Error 0000: Telescope failure confirmed. Severe structural damage detected, likely
+    caused by meteoroid impact. Data uplink unstable.\r\n[02:05] Final Status Update:
+    Last transmission confirms extensive damage. Telescope systems non-operational.
+    Mission control notified.\r\n[02:10] Data Link Lost: Connection with Lunar Far
+    Side Observatory severed. All communication attempts unsuccessful.\r\n\r\nSummary:
+    Observation sequence initiated successfully but terminated following a severe
+    impact event. All telemetry data suggests telescope destruction, likely by meteoroid
+    impact. Final data secured before signal loss. Awaiting further assessment for
+    possible recovery mission.\r\nEmail from Dr. \u2014---\r\nDate: xxxxx\r\nTime:
+    xxxxx\r\nHi \u2014---,\r\nI\u2019m sure you\u2019ve seen the alert by now. Our
+    telescope on the far side went down just a few hours ago, and unfortunately,
+    this looks serious. The last log entries confirm an impact at 01:55\u2014sensors
+    caught a direct hit on the primary structure. Initial diagnostics show catastrophic
+    damage, and we lost the uplink minutes later. It doesn\u2019t look recoverable
+    remotely, and all systems are offline.\r\nI\u2019m trying to retrieve as much
+    pre-failure data as possible, but without a live link, we\u2019re limited to
+    what we managed to cache before the connection dropped. I\u2019ll send over everything
+    I have shortly, though I doubt it includes anything from the final observation
+    sequence.\r\nDo you have any ideas? I\u2019m hoping there\u2019s at least a chance
+    we can salvage part of it or determine a more precise cause. The data suggests
+    a meteoroid impact, but I\u2019d feel more comfortable if we could confirm.\r\nLet
+    me know your thoughts.\r\nBest,\r\n\u2014---"

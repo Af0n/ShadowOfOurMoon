@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a207d509b8b5c549a91d5ca2e0114f1, type: 3}
+  m_Name: LoreLog3
+  m_EditorClassIdentifier: 
+  id: 2
+  log: "From: Dr. Elias Porter, Lunar Biologist\r\nTo: Dr. Jana Torres, Lunar Science
+    Lead\r\nSubject: Discovery of Unknown Lunar \u201CSapling\u201D - Sample Collected\r\n\r\nEmail
+    from Dr. Elias Porter\r\nDate: 2024-11-11\r\nTime: 07:15 AM\r\nJana,\r\nI can
+    hardly believe what we found\u2014I'm writing this right from the rover because
+    I didn\u2019t want to wait to get back to Boundary Station to tell you.\r\nDuring
+    our post-quake inspection, about 500 meters from the epicenter of last night\u2019s
+    seismic event, we encountered something completely unexpected. We were combing
+    through the affected area when we spotted a small, upright structure pushing
+    out of the regolith. At first, I thought it was some type of debris or rock formation,
+    but on closer inspection, it looked\u2026 alive. It\u2019s the size of a small
+    sapling, maybe 20 cm high, with a thin stem and several oddly branching structures
+    that look almost like primitive leaves. The color is faintly greenish, too\u2014nothing
+    we\u2019ve ever seen here before.\r\nI collected the \u201Csapling\u201D (I don\u2019t
+    know what else to call it!) for immediate study, using full sterile procedures.
+    I know it sounds impossible, but there\u2019s no doubt: it has an organic structure.
+    It seems intact despite the seismic disruption around it, which in itself is
+    bizarre. You know as well as I do how unlikely it is for anything organic to
+    appear spontaneously on the lunar surface\u2014let alone survive the extreme
+    conditions, radiation, and the quake itself.\r\nHonestly, I\u2019m excited but
+    also slightly unsettled. If the quake exposed this thing, where did it come from?
+    Could it have emerged from beneath the surface during the quake? There was some
+    soil displacement from the tremors, which might explain why we\u2019ve never
+    seen anything like this before. I\u2019ll secure the sample in the station\u2019s
+    quarantine chamber once we\u2019re back and run a full analysis.\r\nWe need to
+    have a deeper look at the soil layers around the quake site. I\u2019ll update
+    you with lab results as soon as possible, but I think we might be onto something
+    unprecedented here.\r\nBest,\r\nElias"
