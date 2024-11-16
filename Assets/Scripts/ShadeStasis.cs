@@ -45,11 +45,6 @@ public class ShadeStasis : MonoBehaviour
             return;
         }
 
-        // don't light self
-        if(obj.CompareTag(tag)){
-            return;
-        }
-
         obj.litBy = this;
     }
 

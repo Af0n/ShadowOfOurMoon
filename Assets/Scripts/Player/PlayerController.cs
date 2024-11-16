@@ -97,8 +97,8 @@ public class PlayerController : MonoBehaviour
         float forward = moveInput.y * speed * Time.deltaTime;
         float right = moveInput.x * speed * Time.deltaTime;
 
-        controller.Move(multiplier * forward * transform.forward);
-        controller.Move(multiplier * right * transform.right);
+        controller.Move(forward * transform.forward);
+        controller.Move(right * transform.right);
     }
 
     private void DoGravity()
