@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LoreCanvas
+  - Light
   layers:
   - Default
   - TransparentFX

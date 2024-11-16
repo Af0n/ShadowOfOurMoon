@@ -14,18 +14,12 @@ public class PlayerInteract : MonoBehaviour
     
 
     private void Update() {
-        toggleTimer -= Time.deltaTime;
-
-        doingInteract = toggleTimer <= 0;
-
-        if(!doingInteract){
-            return;
+        if(Input.GetAxis("Fire1") !=0){
+            TryInteract();
         }
     }
 
-    public void TryInteract(){
-        toggleTimer = toggleTime;
-
+    private void TryInteract(){
         RaycastHit hit;
         Physics.Raycast(cam.position, cam.forward, out hit, range, interactMask);
 
