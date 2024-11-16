@@ -8,15 +8,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Post Processing
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - NoPlayerCollision
+  - Interactable
+  - Stasisable
+  - Light
   - 
   - 
   - 
