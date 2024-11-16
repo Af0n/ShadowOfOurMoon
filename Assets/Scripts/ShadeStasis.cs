@@ -47,4 +47,12 @@ public class ShadeStasis : MonoBehaviour
 
         obj.litBy = this;
     }
+
+    private void OnTriggerExit(Collider other) {
+        obj = other.GetComponent<StasisObject>();
+
+        if(obj.litBy == this){
+            obj.litBy = null;
+        }
+    }
 }
