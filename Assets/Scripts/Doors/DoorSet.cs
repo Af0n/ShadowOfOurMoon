@@ -5,6 +5,8 @@ using UnityEngine;
 // Manages the two parts of one door
 public class DoorSet : MonoBehaviour
 {
+    private DoorGroup doorGroup; // used to check if this door set is unlocked
+
     public Transform doorLeft;
     public Transform doorRight;
 
@@ -19,6 +21,7 @@ public class DoorSet : MonoBehaviour
     {
         leftStartPos = doorLeft.position;
         rightStartPos = doorRight.position;
+        doorGroup = GetComponentInParent<DoorGroup>();
     }
 
     private IEnumerator OpenDoorSet(float duration)
@@ -28,11 +31,14 @@ public class DoorSet : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         // Trigger door opening (for example, with a key press)
         //if (Input.GetKeyDown(KeyCode.E)) // Replace with your desired trigger
         //{
-        //    isOpening = !isOpening; // Toggle the door state
+        //    //isOpening = !isOpening; // Toggle the door state
+
+        //    doorGroup.isUnlocked = doorGroup.isUnlocked == true ? false : true;
+        //    Debug.Log("Doors Opened:" +  doorGroup.isUnlocked);
         //}
 
         // Move doors based on the state
@@ -62,7 +68,10 @@ public class DoorSet : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         PlayerInteract player = collider.gameObject.GetComponent<PlayerInteract>();
-        if (player != null && !isOpening)
+
+        // If player has the given keycard, let the door be unlocked
+
+        if (player != null && doorGroup.isUnlocked && !isOpening)
         {
             Debug.Log("Player entered trigger");
             isOpening = true;

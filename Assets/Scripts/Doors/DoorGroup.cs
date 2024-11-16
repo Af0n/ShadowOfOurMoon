@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class DoorGroup : MonoBehaviour
 {
-    // Close both Door Sets when the player exits the trigger
-    DoorSet innerDoors;
-    DoorSet outerDoors;
-    private void OnTriggerExit(Collider collider)
+    [Range(1,4)]
+    public int buildingNum;
+    public bool isUnlocked;
+
+    private void Update()
     {
-        //
-        innerDoors.isOpening = false;
-        outerDoors.isOpening = false;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isUnlocked = !isUnlocked;
+            Debug.Log("is open: " + isUnlocked);
+        }
     }
+
 }
