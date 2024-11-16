@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: cardUnlock
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7793225639281356408, guid: 64b0f8ffc103b4249812b0833d18290c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5110828b0b42dd94f808e9df005085d1, type: 2}
     - target: {fileID: 9065284329713973567, guid: 64b0f8ffc103b4249812b0833d18290c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.152756
