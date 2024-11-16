@@ -203,8 +203,9 @@ MonoBehaviour:
   groundCheck: {fileID: 7118453540015988467}
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   checkRadius: 0.45
+  yVelocity: 0
 --- !u!114 &1014573667339701925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +279,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.4
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
