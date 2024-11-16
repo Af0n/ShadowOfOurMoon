@@ -48,17 +48,10 @@ public class Flashlight : MonoBehaviour
     private void Update()
     {
         EvaluateState();
-
-        // Debug.Log(batteryTimer);
-
         toggleTimer -= Time.deltaTime;
-
-        if(Input.GetAxis("Fire3") != 0){
-            TryToggle();
-        }
     }
 
-    private void TryToggle(){
+    public void TryToggle(){
         // don't do anything while counting down toggle
         if(toggleTimer > 0){
             return;

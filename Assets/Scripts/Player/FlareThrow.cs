@@ -25,10 +25,6 @@ public class FlareThrow : MonoBehaviour
 
     private void Update() {
         DoTimer();
-
-        if(Input.GetAxis("Fire2") != 0){
-            TryThrow();
-        }
     }
 
     private void DoTimer(){
@@ -36,7 +32,7 @@ public class FlareThrow : MonoBehaviour
         rechargeTimer = Mathf.Clamp(rechargeTimer, 0, rechargeTime);
     }
 
-    private void TryThrow(){
+    public void TryThrow(){
         // don't do anything if not charged
         if(PercentCharged != 1){
             return;
