@@ -13,7 +13,7 @@ public class DoorSet : MonoBehaviour
 
     private Vector3 leftStartPos;
     private Vector3 rightStartPos;
-    private bool isOpening = false;
+    public bool isOpening = false;
 
     void Start()
     {
@@ -30,10 +30,10 @@ public class DoorSet : MonoBehaviour
     void Update()
     {
         // Trigger door opening (for example, with a key press)
-        if (Input.GetKeyDown(KeyCode.E)) // Replace with your desired trigger
-        {
-            isOpening = !isOpening; // Toggle the door state
-        }
+        //if (Input.GetKeyDown(KeyCode.E)) // Replace with your desired trigger
+        //{
+        //    isOpening = !isOpening; // Toggle the door state
+        //}
 
         // Move doors based on the state
         if (isOpening)
@@ -49,5 +49,24 @@ public class DoorSet : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider collider)
+    {
+        PlayerInteract player = collider.gameObject.GetComponent<PlayerInteract>();
+        if (player != null && isOpening)
+        {
+            Debug.Log("Player exited trigger");
+            isOpening = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        PlayerInteract player = collider.gameObject.GetComponent<PlayerInteract>();
+        if (player != null && !isOpening)
+        {
+            Debug.Log("Player entered trigger");
+            isOpening = true;
+        }
+    }
 
 }
