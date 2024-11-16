@@ -27,6 +27,7 @@ public class KeyCardManager : MonoBehaviour
     public void AddCard(int unlocksBuildingNo) // call when player collects a keycard
     {
         keyCardsFound[unlocksBuildingNo] = true;
+        Debug.Log("Unlocked card: " +  unlocksBuildingNo);
     }
 
     public bool hasCard(int num)
