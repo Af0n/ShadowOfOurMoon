@@ -11,6 +11,8 @@ public class StasisObject : MonoBehaviour
     public float drain;
     public ShadeStasis litBy;
 
+    public PlayerController controller;
+
     private bool IsNotLit{
         get{ return litBy == null; }
     }
@@ -32,6 +34,8 @@ public class StasisObject : MonoBehaviour
                 health += drain * Time.deltaTime;
             }
             
+            controller.multiplier = Mathf.Max(health, 0.25f);
+
             return;
         }
         rb.isKinematic = IsNotLit;
