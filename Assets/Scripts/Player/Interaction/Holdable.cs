@@ -4,39 +4,55 @@ using UnityEngine;
 
 public class Holdable : Interaction
 {
-    public static Holdable objectHeld; // Assigned only when the player is holding something
+    //public static Holdable objectHeld; // Assigned only when the player is holding something
+    private Rigidbody rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     public override void DoInteract()
     {
-        if(objectHeld == null)
+        if(ObjectHolder.instance.heldObject == null)
         {
             StartCoroutine(OnHold());
         }
-        else if (objectHeld != null && this != objectHeld)
+        else if (ObjectHolder.instance.heldObject != null && this.gameObject != ObjectHolder.instance.heldObject)
         {
-            //StartCoroutine(objectHeld.OnRelease());
             StartCoroutine(OnHold());
         }
     }
 
     public void Update()
     {
-        if (objectHeld != null && Input.GetKeyDown(KeyCode.E))
+        if (ObjectHolder.instance.heldObject != null)
         {
-            StartCoroutine(OnRelease());
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                StartCoroutine(OnRelease());
+            }
+            
         }
     }
 
     public IEnumerator OnHold()
     {
         yield return null;
-        objectHeld = this;
-        Debug.Log("Holding Object");
+        rb.useGravity = false;
+        rb.freezeRotation = true;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        ObjectHolder.instance.heldObject = this.gameObject;
+        //Debug.Log("Holding Object");
     }
 
     public IEnumerator OnRelease()
     {
         yield return null;
-        objectHeld = null;
-        Debug.Log("Released Object");
+        ObjectHolder.instance.heldObject = null;
+        rb.useGravity = true;
+        rb.freezeRotation = false;
+        //Debug.Log("Released Object");
     }
 }
