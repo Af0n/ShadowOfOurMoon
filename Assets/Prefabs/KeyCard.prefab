@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 717122806501780824}
   - component: {fileID: 2765471717530453465}
   - component: {fileID: 7743493015870291332}
+  - component: {fileID: 2487577143870507967}
   m_Layer: 0
   m_Name: KeyCard
   m_TagString: Untagged
@@ -99,3 +100,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardUnlock: 0
+--- !u!65 &2487577143870507967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263815040473812652}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0027588555, y: 0.0020448733, z: 0.00023263412}
+  m_Center: {x: 3.0195513e-13, y: -0.000000059602936, z: -0.00033455744}

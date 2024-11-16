@@ -7,6 +7,7 @@ public class KeyCard : Interaction
     public CardUnlock cardUnlock;
     public override void DoInteract()
     {
+        Debug.Log("Keycard interaction");
         KeyCardManager.instance.AddCard((int)cardUnlock);
     }
 }

@@ -13,7 +13,7 @@ public class DoorGroup : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isUnlocked = !isUnlocked;
-            Debug.Log("is open: " + isUnlocked);
+            //Debug.Log("is open: " + isUnlocked);
         }
     }
 
