@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 
 public class StasisObject : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class StasisObject : MonoBehaviour
             // do this if the player
             if(IsNotLit){
                 health -= drain * Time.deltaTime;
+            }else{
+                health += drain * Time.deltaTime;
             }
             
             return;
