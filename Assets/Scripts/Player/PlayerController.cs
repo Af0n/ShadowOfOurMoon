@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private float xRotation;
     private float yVelocity;
+    public float multiplier;
     
     private void Awake()
     {
