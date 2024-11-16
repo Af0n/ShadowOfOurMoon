@@ -14,12 +14,12 @@ public class PlayerInteract : MonoBehaviour
     
 
     private void Update() {
-        if(!doingInteract){
-            return;
+        if(Input.GetAxis("Fire1") !=0){
+            TryInteract();
         }
     }
 
-    public void TryInteract(){
+    private void TryInteract(){
         RaycastHit hit;
         Physics.Raycast(cam.position, cam.forward, out hit, range, interactMask);
 

@@ -258,10 +258,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4957104568099372060}
+  - {fileID: 7800942721057583962}
+  - {fileID: 7325564003299961351}
   - {fileID: 528849456023969921}
   - {fileID: 3932475495562293903}
-  - {fileID: 7325564003299961351}
-  - {fileID: 7800942721057583962}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -345,10 +345,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashyBar: {fileID: 1587957400846064387}
+  healthBar: {fileID: 0}
   burn: {fileID: 643911262196029189}
   flare: {fileID: 4411231503109453261}
   flashScript: {fileID: 0}
   flareScript: {fileID: 0}
+  stasis: {fileID: 0}
 --- !u!1 &4900942176564735374
 GameObject:
   m_ObjectHideFlags: 0
