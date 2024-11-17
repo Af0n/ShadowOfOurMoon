@@ -19,8 +19,8 @@ public class DoorSet : MonoBehaviour
 
     void Start()
     {
-        leftStartPos = doorLeft.position;
-        rightStartPos = doorRight.position;
+        leftStartPos = doorLeft.localPosition;
+        rightStartPos = doorRight.localPosition;
         doorGroup = GetComponentInParent<DoorGroup>();
     }
 
@@ -44,14 +44,14 @@ public class DoorSet : MonoBehaviour
         // Move doors based on the state
         if (isOpening)
         {
-            doorLeft.position = Vector3.Slerp(doorLeft.position, leftStartPos - new Vector3(0, 0, -slideDistance), Time.deltaTime * speed);
-            doorRight.position = Vector3.Slerp(doorRight.position, rightStartPos + new Vector3(0, 0, -slideDistance), Time.deltaTime * speed);
+            doorLeft.localPosition = Vector3.Slerp(doorLeft.localPosition, leftStartPos - (doorLeft.right * slideDistance), Time.deltaTime * speed);
+            doorRight.localPosition = Vector3.Slerp(doorRight.localPosition, rightStartPos + (doorRight.right * slideDistance), Time.deltaTime * speed);
         }
         else
         {
             // Move doors back to their starting positions when closing
-            doorLeft.position = Vector3.Slerp(doorLeft.position, leftStartPos, Time.deltaTime * speed);
-            doorRight.position = Vector3.Slerp(doorRight.position, rightStartPos, Time.deltaTime * speed);
+            doorLeft.localPosition = Vector3.Slerp(doorLeft.localPosition, leftStartPos, Time.deltaTime * speed);
+            doorRight.localPosition = Vector3.Slerp(doorRight.localPosition, rightStartPos, Time.deltaTime * speed);
         }
     }
 

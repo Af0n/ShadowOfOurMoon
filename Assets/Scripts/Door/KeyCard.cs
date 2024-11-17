@@ -9,6 +9,7 @@ public class KeyCard : Interaction
     {
         Debug.Log("Keycard interaction");
         KeyCardManager.instance.AddCard((int)cardUnlock);
+        Destroy(this.gameObject);
     }
 }
 
