@@ -11,15 +11,8 @@ public class PlayerInteract : MonoBehaviour
     public float toggleTime;
 
     private float toggleTimer;
-    
 
-    private void Update() {
-        if(Input.GetAxis("Fire1") !=0){
-            TryInteract();
-        }
-    }
-
-    private void TryInteract(){
+    public void TryInteract(){
         RaycastHit hit;
         Physics.Raycast(cam.position, cam.forward, out hit, range, interactMask);
 

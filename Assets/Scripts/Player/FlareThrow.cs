@@ -19,29 +19,24 @@ public class FlareThrow : MonoBehaviour
         get{ return rechargeTimer / rechargeTime; }
     }
 
-    private void Awake() {
-        rechargeTimer = rechargeTime;
-    }
+    private void Awake() => rechargeTimer = rechargeTime;
+    
 
-    private void Update() {
-        DoTimer();
-
-        if(Input.GetAxis("Fire2") != 0){
-            TryThrow();
-        }
-    }
+    private void Update() => DoTimer();
+    
 
     private void DoTimer(){
         rechargeTimer += Time.deltaTime;
         rechargeTimer = Mathf.Clamp(rechargeTimer, 0, rechargeTime);
     }
 
-    private void TryThrow(){
+    public void TryThrow(){
         // don't do anything if not charged
         if(PercentCharged != 1){
             return;
         }
 
+        // Then do the thing tuah~
         Destroy(previousFlare);
         rechargeTimer = 0;
         previousFlare = Instantiate(flarePrefab, spawnPos.position, Quaternion.identity);
