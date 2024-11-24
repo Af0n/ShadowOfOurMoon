@@ -10,11 +10,11 @@ public class DoorGroup : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isUnlocked = !isUnlocked;
-            //Debug.Log("is open: " + isUnlocked);
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    isUnlocked = !isUnlocked;
+        //    //Debug.Log("is open: " + isUnlocked);
+        //}
     }
 
     public bool TryUnlock()
