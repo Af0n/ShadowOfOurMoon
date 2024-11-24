@@ -35,15 +35,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        DoLook();
-        DoMove();
         DoGravity();
     }
 
-    private void DoLook()
+    public void DoLook(Vector2 input)
     {
-        float mouseX = Input.GetAxis("Mouse X") * sens * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sens * Time.deltaTime;
+        float mouseX = input.x * sens * Time.deltaTime;
+        float mouseY = input.y * sens * Time.deltaTime;
 
         transform.Rotate(Vector3.up * mouseX);
 
@@ -52,10 +50,10 @@ public class PlayerController : MonoBehaviour
         cam.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
 
-    private void DoMove()
+    public void DoMove(Vector2 input)
     {
-        float forward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        float right = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float forward = input.y * speed * Time.deltaTime;
+        float right = input.x * speed * Time.deltaTime;
 
         controller.Move(multiplier * forward * transform.forward);
         controller.Move(multiplier * right * transform.right);
